@@ -1,0 +1,97 @@
+﻿ 2017-03-07 08:04:04,307 [P12504/D7/T209] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-06 08:04:01
+ 2017-03-07 08:20:38,832 [P12504/D7/T178] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-03-07 08:48:22,689 [P12504/D7/T94] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username vaseto109@gmail.com from IP address ::1
+ 2017-03-07 08:48:22,689 [P12504/D7/T84] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username vaseto109@gmail.com from IP address ::1
+ 2017-03-07 08:48:22,720 [P12504/D7/T94] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: vaseto109@gmail.com logged in from IP address ::1
+ 2017-03-07 08:48:22,720 [P12504/D7/T84] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: vaseto109@gmail.com logged in from IP address ::1
+ 2017-03-07 08:49:47,506 [P12504/D7/T175] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-07 08:49:47,528 [P12504/D7/T175] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 21ms)
+ 2017-03-07 08:51:05,348 [P12504/D7/T153] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 08:51:09,823 [P12504/D7/T123] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 08:51:09,848 [P12504/D7/T123] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 08:51:25,397 [P12504/D7/T208] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 08:51:29,631 [P12504/D7/T123] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 08:51:29,631 [P12504/D7/T123] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 08:51:33,083 [P12504/D7/T175] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at ASP._Page_Views_FrontPage_cshtml.Execute() in d:\School\DevEnvoierments\UmbracoProjects\Umbraco_portfolio\Views\FrontPage.cshtml:line 58
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2017-03-07 08:51:53,075 [P12504/D7/T195] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
+ 2017-03-07 08:51:53,076 [P12504/D7/T195] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2017-03-07 08:51:53,076 [P12504/D7/T195] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2017-03-07 08:51:53,077 [P12504/D7/T195] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2017-03-07 08:51:53,091 [P12504/D7/T153] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor
+ 2017-03-07 08:51:53,092 [P12504/D7/T153] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel
+ 2017-03-07 08:51:53,096 [P12504/D7/T175] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2017-03-07 08:51:53,096 [P12504/D7/T175] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2017-03-07 08:51:53,096 [P12504/D7/T175] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2017-03-07 08:51:55,383 [P12504/D7/T191] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
+ 2017-03-07 08:51:55,383 [P12504/D7/T191] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2017-03-07 08:51:55,383 [P12504/D7/T191] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2017-03-07 08:51:55,383 [P12504/D7/T191] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2017-03-07 08:52:28,780 [P12504/D7/T166] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2017-03-07 08:52:28,843 [P12504/D7/T166] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 62ms)
+ 2017-03-07 08:53:01,288 [P12504/D7/T200] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 08:53:05,543 [P12504/D7/T192] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 08:53:05,544 [P12504/D7/T192] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 08:54:44,272 [P12504/D7/T191] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 08:54:48,493 [P12504/D7/T192] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 08:54:48,493 [P12504/D7/T192] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 09:02:27,002 [P12504/D7/T166] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-07 09:02:27,002 [P12504/D7/T166] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-07 09:03:27,525 [P12504/D7/T112] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 09:03:31,843 [P12504/D7/T192] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 09:03:31,843 [P12504/D7/T192] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 09:06:18,135 [P12504/D7/T110] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-07 09:06:18,150 [P12504/D7/T110] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 14ms)
+ 2017-03-07 09:08:51,365 [P12504/D7/T153] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 09:08:55,596 [P12504/D7/T192] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 09:08:55,598 [P12504/D7/T192] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 09:47:21,467 [P12504/D7/T222] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username vaseto109@gmail.com from IP address ::1
+ 2017-03-07 09:47:21,467 [P12504/D7/T222] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: vaseto109@gmail.com logged in from IP address ::1
+ 2017-03-07 09:48:48,106 [P12504/D7/T224] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Front  Page' with Id '1052' has been published.
+ 2017-03-07 09:48:52,329 [P12504/D7/T192] INFO  umbraco.content - Save Xml to file...
+ 2017-03-07 09:48:52,329 [P12504/D7/T192] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-07 09:48:53,023 [P12504/D7/T219] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-07 09:48:53,023 [P12504/D7/T219] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-07 10:06:54,068 [P12504/D7/T176] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: vaseto109@gmail.com, IP Address: ::1
+ 2017-03-07 10:09:19,679 [P12504/D7/T176] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username vaseto109@gmail.com from IP address ::1
+ 2017-03-07 10:09:19,679 [P12504/D7/T176] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: vaseto109@gmail.com logged in from IP address ::1
+ 2017-03-07 10:28:50,116 [P12504/D7/T486] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: vaseto109@gmail.com, IP Address: ::1
+ 2017-03-07 12:04:04,303 [P12504/D7/T168] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-06 12:04:04
+ 2017-03-07 16:04:04,632 [P12504/D7/T168] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-06 16:04:04
+ 2017-03-07 20:04:05,405 [P12504/D7/T65] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-06 20:04:04

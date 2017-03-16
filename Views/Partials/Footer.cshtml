@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+	@{ var selection = CurrentPage.Site().Children.Where("Visible"); }
+<!-- FOOTER -->
+    <footer>
+      <div class="wrap row small-up-1 medium-up-3">
+        <div class="column">
+          <h4>Contact Info</h4>
+          <hr>
+          <a href="#"><span>Phone</span>@Umbraco.Field("phone")</a>
+          <a href="#"><span>Email</span>@Umbraco.Field("email")</a>
+          <a href="#"><span>Address</span>@Umbraco.Field("address")</a>
+        </div>
+        <div class="column">
+          <h4>Site Map</h4>
+          <hr>
+			<ul>
+    @foreach (var item in selection)
+    {
+        <li class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null)">
+            <a href="@item.Url">@item.Name</a>
+        </li>
+    }
+</ul>
+        </div>
+        <div class="column">
+          <h4>Social Media</h4>
+          <hr>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>

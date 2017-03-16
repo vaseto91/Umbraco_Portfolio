@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.FrontPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+@{
+	var item= Umbraco.Media(@Umbraco.Field("picture"));
+}
+@{ Html.RenderPartial("HeroSection"); }
+@{ Html.RenderPartial("MainSection"); }
+

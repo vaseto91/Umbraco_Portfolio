@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+<!-- MAIN SECTION -->
+	  <section class="main">	  
+  		<div class="wrap row small-up-1  medium-up-2 large-up-4 ">    
+@if (Model.Content.HasValue("icons"))
+      {
+		  var i = 0;
+      foreach (var icon in Model.Content.GetPropertyValue<string>("icons").Split(','))
+      {
+		var mediaItem = Umbraco.TypedMedia(icon);	
+if (CurrentPage.repeatableText.Length > 0)
+    {    
+    <div class="columns column-block"> 
+    <img src="@mediaItem.GetPropertyValue("umbracoFile") " />
+  <h3>@CurrentPage.title[i]</h3>
+  <p>@CurrentPage.repeatableText[i]</p>
+  <a href="AboutMe.html" class="button large expanded">Learn more</a> 
+  </div>
+ i++;	  
+}
+}
+		}
+</div>
+	</section>

@@ -1,0 +1,46 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+<link rel="stylesheet" href="/css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="/css/Style.css" >
+</head>
+	<body>
+	<div class="off-canvas-wrapper"> 
+  	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+		
+		@{ Html.RenderPartial("MobileNavigation"); }
+
+
+	
+		@{ Html.RenderPartial("DesctopNavigation"); }
+	<div class="wrap">
+		
+		<h3 >@Umbraco.Field("wellcomeMsg")</h3>
+		<hr>
+
+	</div>
+	@RenderBody()	
+		@{ Html.RenderPartial("Footer"); }
+	</div>
+		
+  </div>
+  </div>
+
+<script src="/scripts/jquery.js"></script>
+<script src="/scripts/what-input.js"></script>
+<script src="/scripts/foundation.js"></script>
+<script src="/scripts/app.js"></script>
+
+	</body>
+		
+	
+</html>

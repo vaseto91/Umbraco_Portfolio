@@ -1,0 +1,105 @@
+$MainColor: #0C44FF;
+$SecondaryColor: #63707e;
+$ThirdColor: #525d68;
+$FourthColor: #f5f6f7;
+$FontSize: 16px;
+$LaneHeight: 24px;
+$Font:Aller;
+*{
+	outline: none;
+	
+}
+body{
+	background-image: url("/Media/1001/pattern.png");
+
+}
+.wrap{
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+	
+	
+
+}
+h3{
+	width: 70%;
+	padding: 10px 0px;
+	margin: auto;
+	font-variant-position: center;
+	color:#63707e;
+}
+/* ***************************************
+NAV
+**************************************** */
+
+.nav-desktop
+{	
+	height: 80px;
+	background-color: rgba(255,255,255,0.7);
+}
+.top-bar{
+	
+	
+	padding: 0;
+
+
+}
+
+.site-logo
+{
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;	
+}
+.nav-desktop .menu-desktop
+{
+	line-height: 80px;
+	background-color: transparent;
+}
+
+.menu > li > a
+{	
+	color: #525d68;
+	display: inline-block;
+	line-height: 80px;
+	padding-top: 0;
+	
+	padding-bottom: 0;
+	font-family: Aller;
+}
+
+.menu > li > a:hover
+{
+color: #0C44FF;
+}
+/* ***************************************
+MOBILE NAV
+**************************************** */
+.title-bar{
+	background-color: $MainColor;
+	height: 60px;
+	padding-top: 17px;
+
+
+}
+
+
+#mobile-menu{
+	background-color: $FourthColor;
+	padding:10px;
+}
+#mobile-menu li{
+	list-style: none;
+}
+#mobile-menu a{
+	color: rgba($MainColor,0.7);
+	font-weight: bold;
+	line-height: 2;
+}
+#mobile-menu a:hover{
+	color: rgba($MainColor,0.8);
+}
+
+.js-off-canvas-exit {
+	background: $MainColor;
+}
