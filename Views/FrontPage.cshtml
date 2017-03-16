@@ -3,9 +3,8 @@
 @{
 	Layout = "MasterTemplate.cshtml";
 }
-@{
-	var item= Umbraco.Media(@Umbraco.Field("picture"));
-}
+
 @{ Html.RenderPartial("HeroSection"); }
 @{ Html.RenderPartial("MainSection"); }
+
 

@@ -6,9 +6,9 @@
         <div class="column">
           <h4>Contact Info</h4>
           <hr>
-          <a href="#"><span>Phone</span>@Umbraco.Field("phone")</a>
-          <a href="#"><span>Email</span>@Umbraco.Field("email")</a>
-          <a href="#"><span>Address</span>@Umbraco.Field("address")</a>
+          <a href="#"><span>Phone:</span>@Umbraco.Field("phone", recursive: true)</a>
+          <a href="#"><span>Email:</span>@Umbraco.Field("email", recursive: true)</a>
+          <a href="#"><span>Address:</span>@Umbraco.Field("address", recursive: true)</a>
         </div>
         <div class="column">
           <h4>Site Map</h4>

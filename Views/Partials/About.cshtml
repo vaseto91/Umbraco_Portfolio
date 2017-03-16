@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<section class="about">
+	<div class="wrap">	
+		<div class="profile">		
+			<div class="wrapper blog-content">
+			<h2>@Umbraco.Field("aboutTitle")</h2>	
+				
+			<p>
+
+				<img src="@Umbraco.Media(CurrentPage.profilePicture).Url">
+				
+				@Umbraco.Field("aboutInformation")
+					
+					</p>
+			</div>
+	</div>
+</div>
+</section>
+				
