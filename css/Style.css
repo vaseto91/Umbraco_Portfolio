@@ -194,3 +194,28 @@ MAIN SECTION
 .main .columns a{
 	font-size: 24px;
 }
+/* ***************************************
+About Page
+**************************************** */
+.profile{
+		display: flex;
+		flex-direction: column;
+		align-items: right;
+
+		background-color: $FourthColor;
+	}
+
+.aobut img{
+		 float: left;
+		 padding: 10px 30px 10px 10px;
+    		margin: 0 0 10px 10px;
+	}
+	.about .button{
+		float: right;
+	}
+	.about p{
+		padding: 10px 10px;
+		float:right;
+		
+	}
+

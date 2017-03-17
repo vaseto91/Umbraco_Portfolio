@@ -18,20 +18,15 @@
   	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 		
 		@{ Html.RenderPartial("MobileNavigation"); }
-
-
-	
 		@{ Html.RenderPartial("DesctopNavigation"); }
 	<div class="wrap">
-		
 		<h3 >@Umbraco.Field("wellcomeMsg")</h3>
 		<hr>
-
-	</div>
+	
 	@RenderBody()	
-		@{ Html.RenderPartial("Footer"); }
-	</div>
-		
+	@{ Html.RenderPartial("Footer"); }
+</div>
+	</div>		
   </div>
   </div>
 

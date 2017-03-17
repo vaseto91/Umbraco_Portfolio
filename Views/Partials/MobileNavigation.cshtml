@@ -7,18 +7,13 @@
     It also highlights the current active page/section in the navigation with the css class "current".
 *@
 
-@{ var selection = CurrentPage.Site().Children.Where("Visible"); }
+
 
 
 	
 <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
 		<ul>
-    @foreach (var item in selection)
-    {
-        <li class="@(item.IsAncestorOrSelf(CurrentPage) ? "current" : null)">
-            <a href="@item.Url">@item.Name</a>
-        </li>
-    }
+   @{ Html.RenderPartial("DynamicNavigation"); }
 </ul>
 	</div>
 

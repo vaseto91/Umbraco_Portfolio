@@ -5,10 +5,11 @@
 		<div class="profile">		
 			<div class="wrapper blog-content">
 			<h2>@Umbraco.Field("aboutTitle")</h2>	
-				
+				<img src="@Umbraco.Media(CurrentPage.profilePicture.ToString()).Url">
 			<p>
 
-				<img src="@Umbraco.Media(CurrentPage.profilePicture).Url">
+				
+				
 				
 				@Umbraco.Field("aboutInformation")
 					
